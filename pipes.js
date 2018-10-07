@@ -20,8 +20,8 @@ function Pipe()
         fill(0,200,0);
         if( this.touch )
             fill(200,0,0);
-        rect(this.x, 0, this.w, this.top, 1);
-        rect(this.x, this.bottom, this.w, height-this.bottom, 1);
+        rect(this.x, 0, this.w, this.top);
+        rect(this.x, this.bottom, this.w, height-this.bottom);
     }
     
     this.update = function()
