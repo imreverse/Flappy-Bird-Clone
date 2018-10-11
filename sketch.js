@@ -56,3 +56,12 @@ function keyPressed()
 	if( key == ' ' && !begin )
 		begin = true;
 }
+
+var value = 0;
+function touchStarted()
+{
+	if( value === 0 && !touch && begin )
+		bird.up(), value = 1;
+	if( key == ' ' && !begin )
+		begin = true, value = 0;
+}
