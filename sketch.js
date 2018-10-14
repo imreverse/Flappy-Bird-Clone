@@ -51,8 +51,8 @@ function draw()
 
 function keyPressed()
 {
-	if( key == ' ' && !touch && begin )
+	if( keyCode === UP_ARROW && !touch && begin )
 		bird.up();
-	if( key == ' ' && !begin )
+	if( keyCode === UP_ARROW && !begin )
 		begin = true;
 }
