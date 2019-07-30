@@ -7,7 +7,7 @@ function setup()
 	over = loadImage('images/over.png');
 	f5 = loadImage('images/f5.png');
 	createCanvas(405,720);
-	bird = new Bird;
+	bird = new Bird();
 	pipes.push(new Pipe());
 }
 
