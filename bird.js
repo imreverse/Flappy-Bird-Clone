@@ -35,12 +35,18 @@ function Bird()
 
     this.update = function()
     {
+        // Increase velocity with time
         this.velocity += this.gravity;
+        // Some air resistance
         this.velocity *= 0.95;
+        // Change bird's y acc to velocity, gradually
         this.y += this.velocity;
 
+        // If the bird has hit the bottom, change it's y coordinate to a constant
+        // And set it's velocity to 0, so the bird doesn't move
         if( this.y>height-fbird.height/10 )
             this.y = height-fbird.height/10, this.velocity = 0;
+        // Also if the bird goes way to above the screen, constantize the y
         if( this.y<-fbird.height/10 )
             this.y = -fbird.height/10;
     }
