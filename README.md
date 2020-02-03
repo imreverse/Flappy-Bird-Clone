@@ -1,4 +1,4 @@
-# Bang-The-Laptopo-Bird
+# Bang-The-Laptop-Bird
 An attempt to imitate the functioning of the physics of the famous 2013 android game, Flappy Bird!
 Added the functionality of using audio to upthrust the bird. One can *bang* the keyboard, to get this working. ;)
 Run the program by executing the "index.html" file.
